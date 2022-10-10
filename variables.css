@@ -1,4 +1,3 @@
-@import url(‘https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap’);
 :root {
     /* color */
     --lila: #855ec3;
@@ -8,7 +7,7 @@
     --gris: #b1c9cd;
     --negro: #283337;
     /* Gradients / lights and darks */
-    --amarillo-light: ##fefae5;
+    --amarillo-light: #fefae5;
     --lila-light: #e5ddf2;
     --magenta-light: #f7ddef;
     --naranja-light: #ffe9e1;
