@@ -15,7 +15,7 @@ header {
 }
 
 .footer {
-    background-color: blueviolet;
+    background: var(--bg-gradient);
 }
 
 .footer h4 {
