@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 :root {
     /* color */
     --lila: #855ec3;
     --magenta: #d75cb1;
     --amarillo: #ffd700;
+    --amarillo2: #fbe882;
     --naranja: #ff9770;
     --gris: #b1c9cd;
     --negro: #283337;
@@ -15,5 +17,6 @@
     --gris-light: #c4dfe3;
     --bg-gradient: linear-gradient(103.02deg, #855ec3 11.8%, #d75cb1 95.84%);
     /* fuente */
-    --font-display: ‘Passion One’;
+    --font-display: 'Passion One';
+    --font-text: 'Roboto', sans-serif;
 }
