@@ -351,3 +351,48 @@ background: var(--bg-gradient);
 
 /*END animación */
 /*END FORMAS */
+
+/* cambios de camilo */
+
+.card-img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 576px) { 
+    .a-container {
+        display: flex;
+    }
+
+    .card-img {
+        width: 50%;
+        height: auto;
+    }
+
+    .card-body {
+        width: 50%;
+    }
+}
+
+.card-text {
+    font-size: .9rem;
+    line-height: 1.25rem;
+}
+
+.icon {
+    width: .8rem;
+}
+
+/* END cambios de camilo */
