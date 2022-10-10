@@ -1,41 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Conexión por cdn a bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Nuestros estilos css -->
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="style.css">
+  <!-- Conexión por cdn a bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-    <title>CatSpace</title>
+  <!-- Nuestros estilos css -->
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="style.css" />
 
-  </head>
-  <body>
+  <title>CatSpace</title>
+</head>
 
-    <header>
-        <nav>
+<body>
+  <header>
+    <nav>
+      <div class="container-md bg-primary">
+        <h1>Header</h1>
 
-        </nav>
-    </header>
-    <main>
-      <h1>Hello world!</h1>
+      </div>
 
-    </main>
+    </nav>
+  </header>
 
-    <footer>
+  <main>
+    <div class="container">
 
-    </footer>
-    
-    <!-- Scripts de bootstrap  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    
-    </body>
+      <div class="row g-3">
+
+        <!-- card  -->
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card shadow-sm">
+            <!-- anchor para que la card sea un único link  -->
+            <a class="a-container" href="#">
+              <img src="assets/funny-dancing-cat-01.jpeg" class="card-img" alt="Funny Dancing Cat" />
+              <div class="card-body">
+                <h1 class="display-6">Titulo de un evento gatuno</h1>
+                <p class="card-text "><img src="assets/location-dot-solid.svg" alt="location" class="icon">Apollo |
+                  Barcelona
+                </p>
+
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- card  -->
+
+
+
+        <!-- card  -->
+
+
+
+        <!-- card  -->
+
+
+      </div>
+      <!-- row  -->
+
+    </div>
+    <!-- container  -->
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <!-- Scripts de bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
