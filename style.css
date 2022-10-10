@@ -1,4 +1,23 @@
+* { box-sizing: border-box; }
+
 /* fondos */
+
+.bg-lila-light{
+	background: var(--lila-light);
+}
+
+.bg-naranja-light{
+	background: var(--naranja-light);
+}
+
+.bg-magenta-light{
+	background: var(--magenta-light);
+}
+
+.bg-amarillo-light{
+	background: var(--amarillo-light);
+}
+
 .bg-gradiente {
 	background: var(--bg-gradient);
 }
@@ -50,6 +69,7 @@
 	border-color: var(--color);
 	border-width: 2px;
 	color: var(--color);
+	
 }
 
 /* efectos hover */
@@ -99,7 +119,37 @@ footer {
 	z-index: 1;
 }
 
-/* vista desktop */
+.circulos{
+
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-bottom:1rem;
+}
+
+.text-gradient{
+
+
+background: var(--bg-gradient);
+-webkit-background-clip: text;
+  color: transparent;  
+}
+
+/* carousel */
+
+.carousel-cell {
+	width: 50%; /* half-width */
+	height: 160px;
+	margin-right: 10px;
+  }
+
+
+/* vista desktop home */
 
 /*solucionar un problema de template */
 @media (min-width: 768px) {
@@ -299,14 +349,5 @@ footer {
 	}
 }
 
-@-webkit-keyframes aparece {
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes aparece {
-	to {
-		opacity: 1;
-	}
-}
+/*END animación */
+/*END FORMAS */
