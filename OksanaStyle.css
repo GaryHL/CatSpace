@@ -1,39 +1,33 @@
-header {
-    background: var(--bg-gradient);
-}
-
-.rounded-img {
-    width: 75%;
-    border-radius: 55%;
-    box-shadow: 0 0 10px rgb(26, 9, 9, 0.4);
-    padding: 0.3em;
-    margin-top: 5%;
-    margin-left: 10%;
-}
-
-.container-fluid {
-    display: flex;
-    justify-content: center;
-}
-
-.imgMap {
-    box-shadow: 0 0 10px rgb(26, 9, 9, 0.4);
-    padding: 0.2em;
-    margin-top: 3%;
-    margin-left: 15%;
-    margin-bottom: 5%;
-}
-
-.list {
-    padding: 0;
-}
-
-.search {
-    margin
-}
-
-
-/*LISTA EVENTS.list-group {
+        header {
+            background: var(--bg-gradient);
+        }
+        
+        .rounded-img {
+            width: 75%;
+            border-radius: 55%;
+            box-shadow: 0 0 10px rgb(26, 9, 9, 0.4);
+            padding: 0.3em;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        
+        .container-fluid {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .imgMap {
+            box-shadow: 0 0 10px rgb(26, 9, 9, 0.4);
+            padding: 0.2em;
+            margin-top: 3%;
+            margin-left: 15%;
+            margin-bottom: 5%;
+        }
+        
+        .list {
+            padding: 0;
+        }
+        /*LISTA EVENTS.list-group {
     background-color: burlywood;
 }
 
@@ -59,75 +53,88 @@ header {
 }
 
 */
-
-
-/*BUTTONS Purple*/
-
-.btn-primary-purple {
-    --color: var(--bg-gradient);
-    background: var(--color);
-    border-color: var(--color);
-    color: var(---lila-light);
-    margin-top: 10%;
-    margin-bottom: 10%;
-    min-width: 139px;
-    min-height: 40px;
-}
-
-.btn-primary-purple:hover {
-    --color: var(--lila-light);
-    background: var(--lila-light);
-    border-color: var(--color);
-    color: var(--lila-dark);
-}
-
-
-/*footer*/
-
-.footer {
-    background: var(--bg-gradient);
-}
-
-.footer h4 {
-    color: var(--negro);
-    text-transform: uppercase;
-    font-size: 16px;
-    border-bottom: 1px solid var(--negro);
-}
-
-.footer a {
-    text-align: none;
-    transition: all 0.3s;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: var(--amarillo);
-    text-decoration: underline;
-}
-
-.footer a,
-footer li {
-    color: var(--gris);
-}
-
-.footer li a {
-    display: block;
-}
-
-.footer-icons a {
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 20px;
-    align-items: center;
-}
-
-.footer-icons {
-    margin-bottom: 5%;
-    margin-top: 3%;
-    margin-left: 5%;
-}
-
-h6 {
-    text-align: center;
-}
+        /*BUTTONS Purple*/
+        
+        .btn-primary-purple {
+            --color: var(--bg-gradient);
+            background: var(--color);
+            border-color: var(--color);
+            color: var(---lila-light);
+            margin-top: 10%;
+            margin-bottom: 10%;
+            min-width: 139px;
+            min-height: 40px;
+        }
+        
+        .btn-primary-purple:hover {
+            --color: var(--lila-light);
+            background: var(--lila-light);
+            border-color: var(--color);
+            color: var(--lila-dark);
+        }
+        /*NEW CATS*/
+        
+        .btn-primary-profile {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: transparent;
+            border-color: transparent;
+            transition: all .2s ease-in-out;
+            filter: initial;
+        }
+        
+        .btn-primary-profile:hover {
+            transform: scale(0.9);
+            filter: saturate(150%);
+        }
+        /*footer*/
+        
+        .footer {
+            background: var(--bg-gradient);
+        }
+        
+        .footer h4 {
+            color: var(--negro);
+            text-transform: uppercase;
+            font-size: 16px;
+            border-bottom: 1px solid var(--negro);
+        }
+        
+        .footer a {
+            text-align: none;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: var(--amarillo);
+            text-decoration: underline;
+        }
+        
+        .footer a,
+        footer li {
+            color: var(--gris);
+        }
+        
+        .footer li a {
+            display: block;
+        }
+        
+        .footer-icons a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 20px;
+            align-items: center;
+        }
+        
+        .footer-icons {
+            margin-bottom: 5%;
+            margin-top: 3%;
+            margin-left: 5%;
+        }
+        
+        h6 {
+            text-align: center;
+        }
