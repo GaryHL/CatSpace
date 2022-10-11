@@ -1,356 +1,371 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
+
 
 /* fondos */
 
-.bg-lila-light{
-	background: var(--lila-light);
+.bg-lila-light {
+    background: var(--lila-light);
 }
 
-.bg-naranja-light{
-	background: var(--naranja-light);
+.bg-naranja-light {
+    background: var(--naranja-light);
 }
 
-.bg-magenta-light{
-	background: var(--magenta-light);
+.bg-magenta-light {
+    background: var(--magenta-light);
 }
 
-.bg-amarillo-light{
-	background: var(--amarillo-light);
+.bg-amarillo-light {
+    background: var(--amarillo-light);
 }
 
 .bg-gradiente {
-	background: var(--bg-gradient);
+    background: var(--bg-gradient);
 }
 
 .body-bg-login {
-	background: var(--lila);
+    background: var(--lila);
 }
 
+
 /* cambiar la fuente a los display */
+
 .display-1,
 .display-2,
 .display-3,
 .display-4,
 .display-5,
 .display-6 {
-	font-family: var(--font-display);
+    font-family: var(--font-display);
 }
 
 .display-cat {
-	font-weight: 400;
-	font-size: 60px;
-	line-height: 44px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 44px;
 }
 
 @media (min-width: 768px) {
-	.display-cat {
-		font-weight: 400;
-		font-size: 96px;
-		line-height: 81px;
-	}
+    .display-cat {
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 81px;
+    }
 }
+
 
 /*botones*/
 
 .btn {
-	border-radius: 2rem;
-	font-weight: 500;
+    border-radius: 2rem;
+    font-weight: 500;
 }
 
 .btn-primary {
-	--color: var(--amarillo2);
-	background: var(--color);
-	border-color: var(--color);
-	color: var(--negro);
+    --color: var(--amarillo2);
+    background: var(--color);
+    border-color: var(--color);
+    color: var(--negro);
 }
 
 .btn-outline-primary {
-	--color: var(--amarillo2);
-	border-color: var(--color);
-	border-width: 2px;
-	color: var(--color);
-	
+    --color: var(--amarillo2);
+    border-color: var(--color);
+    border-width: 2px;
+    color: var(--color);
 }
+
 
 /* efectos hover */
 
 .btn-primary:hover {
-	--color: var(--negro);
-	background: var(--color);
-	border-color: var(--color);
-	color: var(--amarillo2);
+    --color: var(--negro);
+    background: var(--color);
+    border-color: var(--color);
+    color: var(--amarillo2);
 }
 
 .btn-outline-primary:hover {
-	--color: var(--amarillo2);
-	border-color: var(--color);
-	background: var(--color);
-	border-width: 2px;
-	color: var(--negro);
+    --color: var(--amarillo2);
+    border-color: var(--color);
+    background: var(--color);
+    border-width: 2px;
+    color: var(--negro);
 }
+
 
 /*Basicos */
+
 body {
-	margin: 0;
-	font-family: var(--font-text);
-	font-size: 16px;
-	font-weight: 400;
-	color: var(--negro);
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
+    margin: 0;
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--negro);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* FOOTER */
+
 footer {
-	border-top: 3px solid var(--naranja);
-	width: 100%;
-	margin-top: auto;
-	background: var(--lila-dark);
+    border-top: 2px solid var( --lila-dark);
+    width: 100%;
+    margin-top: auto;
+    /* background: var(--lila-dark); */
 }
+
 
 /* vista home */
+
 .header-home .cat {
-	z-index: 9;
+    z-index: 9;
 }
 
-.header-home .container > .row {
-	position: relative;
-	z-index: 1;
+.header-home .container>.row {
+    position: relative;
+    z-index: 1;
 }
 
-.circulos{
-
-	border-radius: 50%;
-	width: 140px;
-	height: 140px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;	
-	margin-bottom:1rem;
+.circulos {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
 }
 
-.text-gradient{
-
-
-background: var(--bg-gradient);
--webkit-background-clip: text;
-  color: transparent;  
+.text-gradient {
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
 
 /* carousel */
 
 .carousel-cell {
-	width: 50%; /* half-width */
-	height: 160px;
-	margin-right: 10px;
-  }
+    width: 50%;
+    /* half-width */
+    height: 160px;
+    margin-right: 10px;
+}
 
 
 /* vista desktop home */
 
+
 /*solucionar un problema de template */
+
 @media (min-width: 768px) {
-	.header-home .container > .row {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-items: center;
-	}
-
-	.grid1 {
-		grid-column: 1;
-	}
-
-	.grid2 {
-		grid-column: 2;
-		grid-row: 1 / span 2;
-	}
+    .header-home .container>.row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .grid1 {
+        grid-column: 1;
+    }
+    .grid2 {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
 }
+
 
 /* formas  */
 
+
 /*contenedor*/
+
 .animacion-contenedor {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-.animacion-contenedor > picture {
-	position: absolute;
+.animacion-contenedor>picture {
+    position: absolute;
 }
+
 
 /* estrellas */
+
 .big-star {
-	bottom: 19%;
-	right: 7%;
-	-webkit-animation: star 1.5s ease-out infinite alternate;
-	animation: star 1.5s ease-out infinite alternate;
-	transform-origin: center;
-	transform-box: fill-box;
+    bottom: 19%;
+    right: 7%;
+    -webkit-animation: star 1.5s ease-out infinite alternate;
+    animation: star 1.5s ease-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
 .puntos {
-	bottom: 4%;
-	right: 10%;
-	z-index: 10;
+    bottom: 4%;
+    right: 10%;
+    z-index: 10;
 }
 
 .puntos circle {
-	transform-origin: center;
-	transform-box: fill-box;
-	opacity: 0;
+    transform-origin: center;
+    transform-box: fill-box;
+    opacity: 0;
 }
 
 .puntos circle:nth-child(odd) {
-	-webkit-animation: puntos 0.8s ease-in forwards;
-	animation: puntos 0.8s ease-in forwards;
+    -webkit-animation: puntos 0.8s ease-in forwards;
+    animation: puntos 0.8s ease-in forwards;
 }
 
 .puntos circle:nth-child(even) {
-	-webkit-animation: puntos 1s ease-in 0.4s forwards;
-	animation: puntos 1s ease-in 0.4s forwards;
+    -webkit-animation: puntos 1s ease-in 0.4s forwards;
+    animation: puntos 1s ease-in 0.4s forwards;
 }
 
 .md-star {
-	bottom: 34%;
-	right: 40%;
-	opacity: 0;
-	-webkit-animation: destello 0.8s linear infinite alternate;
-	animation: destello 0.8s linear infinite alternate;
+    bottom: 34%;
+    right: 40%;
+    opacity: 0;
+    -webkit-animation: destello 0.8s linear infinite alternate;
+    animation: destello 0.8s linear infinite alternate;
 }
 
 .linea {
-	top: 19%;
-	right: 36%;
+    top: 19%;
+    right: 36%;
 }
 
 .linea svg .izq {
-	stroke-dasharray: 130px;
-	stroke-dashoffset: 130px;
-	-webkit-animation: dibujo 2s infinite;
-	animation: dibujo 2s infinite;
-	transform: rotate(181deg);
-	transform-origin: center;
-	transform-box: fill-box;
+    stroke-dasharray: 130px;
+    stroke-dashoffset: 130px;
+    -webkit-animation: dibujo 2s infinite;
+    animation: dibujo 2s infinite;
+    transform: rotate(181deg);
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
 .linea svg .drc {
-	stroke-dasharray: 130px;
-	stroke-dashoffset: 130px;
-	-webkit-animation: dibujo 2s infinite;
-	animation: dibujo 2s infinite;
+    stroke-dasharray: 130px;
+    stroke-dashoffset: 130px;
+    -webkit-animation: dibujo 2s infinite;
+    animation: dibujo 2s infinite;
 }
 
 .sm-star {
-	top: 25%;
-	right: 10.5%;
-	opacity: 0;
-	-webkit-animation: destello 0.8s linear infinite alternate 2s;
-	animation: destello 0.8s linear infinite alternate 2s;
+    top: 25%;
+    right: 10.5%;
+    opacity: 0;
+    -webkit-animation: destello 0.8s linear infinite alternate 2s;
+    animation: destello 0.8s linear infinite alternate 2s;
 }
+
 
 /* animación de formas */
 
 @-webkit-keyframes star {
-	0% {
-		transform: translatex(0.4rem) rotate(1.8deg);
-		-webkit-filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
-		filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
-	}
-	100% {
-		transform: scale(0.01) translatex(0rem) rotate(0deg);
-		opacity: 0;
-		-webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
-
-		filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
-	}
+    0% {
+        transform: translatex(0.4rem) rotate(1.8deg);
+        -webkit-filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
+        filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
+    }
+    100% {
+        transform: scale(0.01) translatex(0rem) rotate(0deg);
+        opacity: 0;
+        -webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+        filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+    }
 }
 
 @keyframes star {
-	0% {
-		transform: translatex(0.4rem) rotate(1.8deg);
-		-webkit-filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
-		filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
-	}
-	100% {
-		transform: scale(0.01) translatex(0rem) rotate(0deg);
-		opacity: 0;
-		-webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
-
-		filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
-	}
+    0% {
+        transform: translatex(0.4rem) rotate(1.8deg);
+        -webkit-filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
+        filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
+    }
+    100% {
+        transform: scale(0.01) translatex(0rem) rotate(0deg);
+        opacity: 0;
+        -webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+        filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+    }
 }
 
 @-webkit-keyframes puntos {
-	0% {
-		transform: scale(0.01);
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
+    0% {
+        transform: scale(0.01);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes puntos {
-	0% {
-		transform: scale(0.01);
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
+    0% {
+        transform: scale(0.01);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes destello {
-	0% {
-		transform: scale(0.01);
-		opacity: 0;
-		-webkit-filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
-		filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
-	}
-	100% {
-		opacity: 1;
-
-		-webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
-
-		filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
-	}
+    0% {
+        transform: scale(0.01);
+        opacity: 0;
+        -webkit-filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
+        filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
+    }
+    100% {
+        opacity: 1;
+        -webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+        filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+    }
 }
 
 @keyframes destello {
-	0% {
-		transform: scale(0.01);
-		opacity: 0;
-		-webkit-filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
-		filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
-	}
-	100% {
-		opacity: 1;
-
-		-webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
-
-		filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
-	}
+    0% {
+        transform: scale(0.01);
+        opacity: 0;
+        -webkit-filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
+        filter: drop-shadow(0px 0px 11px rgb(255, 255, 255));
+    }
+    100% {
+        opacity: 1;
+        -webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+        filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+    }
 }
 
 @-webkit-keyframes dibujo {
-	to {
-		stroke-dashoffset: 0;
-	}
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 @keyframes dibujo {
-	to {
-		stroke-dashoffset: 0;
-	}
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
+
 /*END animación */
+
+
 /*END FORMAS */
+
 
 /* cambios de camilo */
 
@@ -361,26 +376,23 @@ background: var(--bg-gradient);
     object-position: top;
 }
 
-
 a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 a:hover {
     color: black;
 }
 
-@media only screen and (max-width: 576px) { 
+@media only screen and (max-width: 576px) {
     .a-container {
         display: flex;
     }
-
     .card-img {
         width: 50%;
         height: auto;
     }
-
     .card-body {
         width: 50%;
     }
@@ -394,5 +406,6 @@ a:hover {
 .icon {
     width: .8rem;
 }
+
 
 /* END cambios de camilo */
