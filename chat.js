@@ -53,6 +53,15 @@ btn_send.addEventListener('click', (e)=>{
         mensaje2.appendChild(p2);
         ul.appendChild(mensaje2)
     }
+    else if(mensaje.textContent === "Muéstrame una obra de arte"){
+        const mensaje2 = document.createElement('li');
+        mensaje2.classList.add('li1_arte')
+        const p2 = document.createElement('img');
+        p2.src=("./images/arte.jpg");
+        p2.classList.add('imagen_mensaje_arte')
+        mensaje2.appendChild(p2);
+        ul.appendChild(mensaje2)
+    }
 
     else if(mensaje.textContent === "¿Es en serio?"){
         const mensaje2 = document.createElement('li');
