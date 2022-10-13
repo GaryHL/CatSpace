@@ -30,6 +30,10 @@
     background: var(--bg-gradient);
 }
 
+.feed .bg-gradiente {
+	background: url(./images/dancing-black-cats.png) no-repeat right center, var(--bg-gradient);
+}
+
 .body-bg-login {
     background: var(--lila);
 }
