@@ -36,14 +36,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <!-- lista para añadir avatar y campana-->
-                    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="./profile.html">
+                            <img src="./images/catProfile.jpg" class="rounded-circle border border-2 border-white" style="object-fit:fill; width: 45px; height:45px">
+                        </a>
                       </li>
                      
-                    </ul>-->
-                    <!--- end lista para añadir avatar y campana-->
+                    </ul>
+                    
                 </div>
             </div>
         </nav>
@@ -496,8 +498,8 @@
 
                     <!-- card  -->
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card shadow-sm">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="card shadow-sm" >
                             <!-- anchor para que la card sea un único link  -->
                             <a class="a-container" href="#">
                                 <img src="images/fashion1.jpg" class="card-img" alt="Funny Dancing Cat" />
@@ -524,6 +526,40 @@
                 <!-- row  -->
             </div>
             <!-- container  -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+            
+                      <div class="modal-header border-0 position-absolute ">
+                        <button type="button" class="btn-close text-light color-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      
+            
+                      <div class="modal-body p-0">
+                        <div class="col-md-12 row">
+                        <div class="col-sm-12 col-md-6">
+                          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.h8DRvNCNcd8on5rvuLkPdwHaFj%26pid%3DApi&f=1&ipt=607360861223d91bfe1b3ec57d5bdf1c3b67e85a115649b605a50236bc6b515f&ipo=images" width="100%"alt="Gato pianista">
+                        </div>
+                        <div class="col-sm12 col-md-6">
+                          <div class="col-md-12 justify-content-around d-flex py-3">
+                            <button class="col-sm-5 btn-primary">Comprar ticket</button>
+                            <button class="col-sm-5 btn-primary">Comprar ticket</button>
+                          </div>
+                          <h2>Description</h2>
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                          </p>
+                          <div class="col-sm-12 pb-3 d-flex justify-content-center">
+                            <button class="col-8 btn-primary">Comprar ticket</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+                  </div>
+                </div>
+              </div>
 
     </main>
 
